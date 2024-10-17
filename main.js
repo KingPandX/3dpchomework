@@ -217,7 +217,7 @@ scene.add(light)
 let pcmodel, mixer, clips
 
 const loader = new GLTFLoader()
-loader.load('./models/IBMPC.glb', function (gltf) {
+loader.load('/models/IBMPC.glb', function (gltf) {
   pcmodel = gltf
   pcmodel.scene.scale.set(100, 100, 100)
   pcmodel.scene.rotation.y = Math.PI
@@ -230,7 +230,7 @@ loader.load('./models/IBMPC.glb', function (gltf) {
 
 let screenmodel, screenmixer, screenclips
 
-loader.load('./models/IBMScreen.glb', function (gltf) {
+loader.load('/models/IBMScreen.glb', function (gltf) {
   screenmodel = gltf
   screenmodel.scene.scale.set(100, 100, 100)
   screenmodel.scene.rotation.y = Math.PI
